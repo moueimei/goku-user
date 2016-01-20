@@ -19,35 +19,35 @@ public interface GkUserService {
      * @param puId  用户平台ID
      * @return 前台用户对象
      */
-    public GkUser findAcUserByPUId(int puId);
+    public GkUser findUserByPUId(int puId);
 
     /**
      * 根据根据用户平台ID集合查询前台用户信息集合
      * @param puIds  用户平台ID集合
      * @return 前台用户信息集合
      */
-    public List<GkUser> findAcUsersByPUIds(List<Integer> puIds);
+    public List<GkUser> findUsersByPUIds(List<Integer> puIds);
 
     /**
      * 根据根据用户平台ID集合查询前台用户map
      * @param puIds  用户平台ID集合
      * @return 前台用户map  key:平台id
      */
-    public Map<Integer,GkUser> findAcUserMapByPUIds(List<Integer> puIds);
+    public Map<Integer,GkUser> findUserMapByPUIds(List<Integer> puIds);
 
     /**
      * 根据username查询前台用户
      * @param username 前台用户名或手机号
      * @return 前台用户对象
      */
-    public GkUser findAcUserByUserName(String username);
+    public GkUser findUserByUserName(String username);
 
     /**
      * 根据username查询前台用户
      * @param phone 手机号
      * @return 前台用户对象
      */
-    public GkUser findAcUserByPhone(String phone);
+    public GkUser findUserByPhone(String phone);
 
     /**
      * 根据手机号判断是否存在
@@ -69,7 +69,7 @@ public interface GkUserService {
      * @param password 前台用户密码
      * @return  前台用户
      */
-    public GkUser findAcUserByUserameAndPassword(String username, String password);
+    public GkUser findUserByUserameAndPassword(String username, String password);
 
     /**
      * 注册用户
@@ -91,10 +91,10 @@ public interface GkUserService {
 
     /**
      * 编辑用户信息
-     * @param acUser
+     * @param User
      * @return
      */
-    public int submitUserInfo(GkUser acUser);
+    public int submitUserInfo(GkUser User);
 
     /**
      * 清除用户绑定手机号
