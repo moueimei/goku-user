@@ -15,6 +15,7 @@
 
 	<modules>
 		<module>goku-user-rpc</module>
+		<module>goku-admin-rpc</module>
 	</modules>
 
 </project>
